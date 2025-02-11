@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.12</version>
+        <version>3.4.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>org.casbin</groupId>
     <artifactId>casbin-spring-boot-starter</artifactId>
-    <version>1.8</version>
+    <version>1.9.0</version>
 
     <name>casbin-spring-boot-starter</name>
     <description>casbin springboot starter</description>
@@ -57,7 +57,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <publishingServerId>ossrh</publishingServerId>
-                    <tokenAuth>true</tokenAuth>
+                    <!--<tokenAuth>true</tokenAuth>-->
                     <!-- Release versions will be synced to Maven Central automatically. -->
                     <autoPublish>true</autoPublish>
                 </configuration>
@@ -131,13 +131,13 @@
     </build>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>21</java.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.casbin</groupId>
             <artifactId>jcasbin</artifactId>
-            <version>1.55.0</version>
+            <version>1.79.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -147,7 +147,7 @@
         <dependency>
             <groupId>org.casbin</groupId>
             <artifactId>jcasbin-redis-watcher</artifactId>
-            <version>1.4.1</version>
+            <version>1.8.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
